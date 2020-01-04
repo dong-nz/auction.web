@@ -1,0 +1,13 @@
+INSERT INTO USER (id, username, password) VALUES
+(1, 'user', '$2a$20$TDXdspADVrYrDGJA2t0LNe3gvJh2PMmhXyK.6cA5BIzx972P21E0W'), 
+(2, 'user1', '$2a$20$TDXdspADVrYrDGJA2t0LNe3gvJh2PMmhXyK.6cA5BIzx972P21E0W'),
+(3, 'user2', '$2a$20$TDXdspADVrYrDGJA2t0LNe3gvJh2PMmhXyK.6cA5BIzx972P21E0W');
+
+INSERT INTO ROLE (id, name) VALUES
+(1, 'ROLE_BIDDER'),
+(2, 'ROLE_AUCTIONEER');
+
+INSERT INTO USER_ROLE (user_id, role_id) VALUES
+(1,1),
+(2,2),
+(3,2);
